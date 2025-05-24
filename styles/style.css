@@ -26,7 +26,27 @@ body {
 a {
     text-decoration: none;
     color: black;
+    margin: 0;
 }
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+/* Header */
 
 .header-container {
     display: flex;
@@ -85,4 +105,105 @@ a {
     padding: 12px 24px;
     border-radius: 6px;
     background-color: var(--button-color);
+}
+
+/* Hero */
+
+.hero {
+    display: flex;
+}
+
+.hero-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent);
+    width: 100%;
+}
+
+.hero-text {
+    max-width: 616px;
+}
+
+.hero-text h1 {
+    color: white;
+    font-size: 64px;
+    line-height: 110%;
+    margin-bottom: 24px;
+}
+
+.hero-text p {
+    font-family: var(--Stem-Regular);
+    color: white;
+    opacity: 0.8;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 40px;
+}
+
+.hero-text-button {
+    display: flex;
+    font-family: var(--Stem-Medium);
+    font-size: 18px;
+    max-width: 212px;
+    box-sizing: border-box;
+    background-color: var(--button-color);
+    color: white;
+    padding: 16px 32px;
+    border-radius: 6px;
+    align-items: center;
+}
+
+.hero-text-button::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 14px;
+    background-image: url(../images/Polygon\ 2\ \(Stroke\).svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 22px;
+}
+
+/* Hero 2 */
+
+.hero2 {
+    display: flex;
+    margin: 100px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero2-text {
+    max-width: 540px;
+}
+
+.hero2-text h2 {
+    font-size: 48px;
+    line-height: 52px;
+    margin-bottom: 16px;
+}
+
+.hero2-text p {
+    font-family: var(--Stem-Medium);
+    font-weight: 400;
+    font-size: 18px;
+    opacity: 0.7;
+    line-height: 24px;
+    margin-bottom: 32px;
+}
+
+.hero2-text a {
+    display: flex;
+    align-items: center;
+    max-width: 161px;
+    box-sizing: border-box;
+    font-family: var(--Stem-Medium);
+    background-color: var(--button-color);
+    color: white;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 36px;
+    padding: 20px 32px;
 }
