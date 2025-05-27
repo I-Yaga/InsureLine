@@ -356,3 +356,72 @@ span {
     opacity: 0.4;
     font-size: 18px;
 }
+
+/* Aplication one */
+
+.application-one {
+    background-color: var(--accent);
+    padding: 100px 0;
+}
+
+.application-one-title h4 {
+    font-family: var(--Stem-Medium);
+    color: white;
+    font-size: 48px;
+    line-height: 52px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.application-one-title p {
+    font-family: var(--Stem-Regular);
+    color: white;
+    opacity: 0.8;
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 40px;
+}
+
+.form-one {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.form-one input {
+    font-family: var(--Stem-Medium);
+    box-sizing: border-box;
+    padding: 16px 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+}
+
+.form-one input::placeholder {
+    font-family: var(--Stem-Medium);
+    font-size: 18px;
+    opacity: 0.5;
+}
+
+.form-one button {
+    font-family: var(--Stem-Medium);
+    font-size: 18px;
+    line-height: 24px;
+    padding: 16px 32px;
+}
+
+.personal-data {
+    font-family: var(--Stem-Regular);
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    max-width: 482px;
+}
+
+.personal-data a {
+    color: rgba(255, 255, 255, 1);
+}
