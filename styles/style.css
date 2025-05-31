@@ -528,6 +528,7 @@ span {
     border: none;
     background-color: #F7F8FA;
     transition: .2s;
+    cursor: pointer;
 }
 
 .arrow-left:hover {
@@ -543,8 +544,74 @@ span {
     border: none;
     background-color: #F7F8FA;
     transition: .2s;
+    cursor: pointer;
 }
 
 .arrow-right:hover {
     transform: scale(1.2);
+}
+
+/* Polis-ordering */
+
+.polis-ordering {
+    background-color: var(--accent);
+    padding: 100px 0;
+}
+
+.container-secondary {
+    max-width: 570px;
+    margin: 0 auto;
+}
+
+.polis-ordering-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.polis-ordering-title h5 {
+    color: white;
+    font-size: 48px;
+    line-height: 52px;
+    margin-bottom: 16px;
+}
+
+.polis-ordering-title span {
+    font-family: var(--Stem-Regular);
+    color: white;
+    opacity: 0.8;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.polis-ordering-inputs {
+    margin-bottom: 24px;
+}
+
+.polis-ordering-form input {
+    display: block;
+    width: 100%;
+    font-family: var(--Stem-Medium);
+    box-sizing: border-box;
+    padding: 16px 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+}
+
+.polis-ordering-form input:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.polis-ordering-form input::placeholder {
+    font-family: var(--Stem-Medium);
+    font-size: 18px;
+    opacity: 0.5;
+}
+
+.polis-ordering-form span {
+    font-family: var(--Stem-Regular);
+    color: white;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 16px;
 }

@@ -1,3 +1,5 @@
+// Reviews
+
 const scrollContainer = document.getElementById("scroll-container");
 const btnLeft = document.getElementById("scroll-left");
 const btnRight = document.getElementById("scroll-right");
