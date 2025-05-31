@@ -425,3 +425,126 @@ span {
 .personal-data a {
     color: rgba(255, 255, 255, 1);
 }
+
+/* reviews */
+
+.reviews {
+    padding: 100px 0;
+    background-color: #F7F8FA;
+}
+
+.reviews-title {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.reviews-title h5 {
+    font-size: 64px;
+    line-height: 68px;
+    margin-bottom: 24px;
+}
+
+.reviews-title p {
+    font-family: var(--Stem-Medium);
+    font-size: 24px;
+    line-height: 130%;
+    opacity: 0.7;
+}
+
+.scroll-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+  width: 100%;
+  gap: 10px;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.item {
+    box-sizing: border-box;
+    border-radius: 16px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    flex: 0 0 auto;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    padding: 40px 32px;
+}
+
+.item img {
+    border-radius: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    max-width: 64px;
+    max-height: 64px;
+    box-sizing: border-box;
+}
+
+.item p {
+    font-family: var(--Stem-Medium);
+    text-align: center;
+    font-size: 24px;
+    line-height: 130%;
+}
+
+.name {
+    text-align: center;
+}
+
+.name p {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.name span {
+    font-family: var(--Stem-Medium);
+    font-size: 13px;
+    opacity: 0.4;
+}
+
+.arrow-left {
+    background-image: url('../images/arrow-left.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #F7F8FA;
+    transition: .2s;
+}
+
+.arrow-left:hover {
+    transform: scale(1.2);
+}
+
+.arrow-right {
+    background-image: url('../images/arrow-right.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #F7F8FA;
+    transition: .2s;
+}
+
+.arrow-right:hover {
+    transform: scale(1.2);
+}
