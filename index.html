@@ -25,10 +25,11 @@
                 </div>
                 <button class="header-button">Заказать звонок</button>
             </div>
+            <button class="burger-menu"></button>
         </div>
     </header>
     <section class="hero">
-        <img src="images/01.jpeg" alt="car">
+        <img class="hero-image" src="images/01.jpeg" alt="car">
         <div class="hero-background">
             <div class="hero-text">
                 <h1>Страхование вашего автомобиля</h1>
@@ -165,19 +166,45 @@
             </div>
             <form action="form" class="polis-ordering-form">
                 <div class="polis-ordering-inputs">
-                    <input type="text" placeholder="Ваше имя">
-                    <input type="tel" placeholder="+7 (000) 000-0000">
-                    <input type="email" placeholder="E-mail">
+                    <input class="first-input" type="text" placeholder="Ваше имя">
+                    <input class="first-input" type="tel" placeholder="+7 (000) 000-0000">
+                    <input class="first-input" type="email" placeholder="E-mail">
                 </div>
                 <span>Какой полис вас интересует</span>
                 <div class="checkboxes">
-                    <input type="checkbox">
-                    <input type="checkbox">
-                    <input type="checkbox">
+                    <label class="custom-radio">
+                        <input type="radio" name="option"/>
+                        <span class="radio-mark"></span>
+                        КАСКО
+                    </label>
+                    <label class="custom-radio">
+                        <input type="radio" name="option"/>
+                        <span class="radio-mark"></span>
+                        ОСАГО
+                    </label>
+                    <label class="custom-radio">
+                        <input type="radio" name="option"/>
+                        <span class="radio-mark"></span>
+                        Страхование жизни
+                    </label>
                 </div>
+                <button class="primary-button polis-btn" type="submit">Заказать полис</button>
+                <p class="personal-data2">Оставляя заявку, вы соглашаетесь на <a href="#">обработку персональных данных</a> и с <a href="#">условиями бронирования счёта</a></p>
             </form>
         </div>
     </section>
+    <footer>
+        <div class="container">
+            <a href="#" class="logo logo-footer">Insure<span class="logo-span">Line</span></a>
+            <nav class="footer-nav">
+                <a href="#" class="footer-nav-link">О компании</a>
+                <a href="#" class="footer-nav-link">Новости</a>
+                <a href="#" class="footer-nav-link">Помощь</a>
+                <a href="#" class="footer-nav-link">Контакты</a>
+            </nav>
+            <p>© 2025 InsureLine</p>
+        </div>
+    </footer>
     <script src="scripts/script.js"></script>
 </body>
 </html>
