@@ -508,7 +508,7 @@ span {
   flex-direction: column;
   gap: 32px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-size: 24px;
   padding: 40px 32px;
 }
@@ -585,6 +585,7 @@ span {
 .container-secondary {
   max-width: 570px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .polis-ordering-title {
@@ -763,14 +764,68 @@ footer p {
 
 @media (max-width: 1140px) {
     .products-cards {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 30px;
     }
     .advantages-cards {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
 }
+}
+
+@media (max-width: 840px) {
+  .hero2-images img {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .header-container {
+    margin: 26px 15px;
+  }
+  .products-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .advantages-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .form-one {
+    flex-direction: column;
+  }
+  .footer-nav {
+    flex-direction: column;
+  }
+  .hero-text h1 {
+    font-size: 10vw;
+  }
+  .hero-text p {
+    font-size: 5vw;
+  }
+  .hero2-text h2 {
+    font-size: 10vw;
+    line-height: 100%;
+  }
+  .products-title h2 {
+    font-size: 8vw;
+    line-height: 100%;
+  }
+  .advantages-title h3 {
+    font-size: 10vw;
+    line-height: 100%;
+  }
+  .application-one-title h4 {
+    font-size: 8vw;
+    line-height: 100%;
+  }
+  .reviews-title h5 {
+    font-size: 10vw;
+  }
+  .item {
+    padding: 20px 25px;
+  }
+  .item p {
+    font-size: 16px;
+  }
+  .polis-ordering-title h5 {
+    font-size: 8vw;
+    line-height: 100%;
+  }
 }
