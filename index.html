@@ -13,11 +13,11 @@
             <a href="#" class="logo">Insure<span class="logo-span">Line</span></a>
             <div class="header-content">
                 <nav class="header-nav">
-                    <a href="#" class="nav-link">О компании</a>
-                    <a href="#" class="nav-link">Новости</a>
-                    <a href="#" class="nav-link">Помощь</a>
-                    <a href="#" class="nav-link">Отзывы</a>
-                    <a href="#" class="nav-link">Контакты</a>
+                    <a href="#products" class="nav-link">Услуги</a>
+                    <a href="#about" class="nav-link">О нас</a>
+                    <a href="#contactUs" class="nav-link">Связаться с нами</a>
+                    <a href="#reviews" class="nav-link">Отзывы</a>
+                    <a href="#polisOrdering" class="nav-link">Заказ полиса</a>
                 </nav>
                 <div class="header-tel-info">
                     <p>Служба продаж</p>
@@ -25,7 +25,7 @@
                 </div>
                 <button class="header-button">Заказать звонок</button>
             </div>
-            <button class="burger-menu"></button>
+            <button class="burger-menu" onclick="openModal()"></button>
         </div>
     </header>
     <section class="hero">
@@ -50,7 +50,7 @@
             </div>
         </section>
     </div>
-    <section class="products">
+    <section class="products" id="products">
         <div class="container">
             <div class="products-title">
                 <h2>Выберите продукт</h2>
@@ -80,7 +80,7 @@
             </div>
         </div>
     </section>
-    <section class="advantages">
+    <section class="advantages" id="about">
         <div class="container">
             <div class="advantages-title">
                 <h2>Преимущества</h2>
@@ -107,7 +107,7 @@
             </div>
         </div>
     </section>
-    <section class="application-one">
+    <section class="application-one" id="contactUs">
         <div class="container">
             <div class="application-one-title">
                 <h4>Закажите прямо сейчас</h4>
@@ -120,7 +120,7 @@
             <p class="personal-data">Оставляя заявку, вы соглашаетесь на <a href="#">обработку персональных данных</a> и с <a href="#">условиями бронирования счёта</a></p>
         </div>
     </section>
-    <section class="reviews">
+    <section class="reviews" id="reviews">
         <div class="container">
             <div class="reviews-title">
                 <h5>Отзывы</h5>
@@ -158,7 +158,7 @@
             </div>
         </div>
     </section>
-    <section class="polis-ordering">
+    <section class="polis-ordering" id="polisOrdering">
         <div class="container-secondary">
             <div class="polis-ordering-title">
                 <h5>Закажите полис онлайн</h5>
@@ -197,14 +197,28 @@
         <div class="container">
             <a href="#" class="logo logo-footer">Insure<span class="logo-span">Line</span></a>
             <nav class="footer-nav">
-                <a href="#" class="footer-nav-link">О компании</a>
-                <a href="#" class="footer-nav-link">Новости</a>
-                <a href="#" class="footer-nav-link">Помощь</a>
-                <a href="#" class="footer-nav-link">Контакты</a>
+                <a href="#about" class="nav-link">О нас</a>
+                <a href="#products" class="nav-link">Услуги</a>
+                <a href="#contactUs" class="nav-link">Связаться с нами</a>
             </nav>
             <p>© 2025 InsureLine</p>
         </div>
     </footer>
+    <div class="modal" id="modal" style="top: -400px;">
+        <button class="header-button" style="margin-bottom: 20px;">Заказать звонок</button>
+        <div class="header-tel-info" style="margin-bottom: 40px;">
+            <p style="text-align: center;">Служба продаж</p>
+            <a href="#" class="header-tel">+7 495 123-45-67</a>
+        </div>
+        <nav class="nav _modal">
+            <a href="#products" class="nav-link">Услуги</a>
+            <a href="#about" class="nav-link">О нас</a>
+            <a href="#contactUs" class="nav-link">Связаться с нами</a>
+            <a href="#reviews" class="nav-link">Отзывы</a>
+            <a href="#polisOrdering" class="nav-link">Заказ полиса</a>
+        </nav>
+        <button class="modal-close" onclick="closeModal()"></button>
+    </div>
     <script src="scripts/script.js"></script>
 </body>
 </html>
