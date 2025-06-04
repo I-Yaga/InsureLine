@@ -691,6 +691,15 @@ span {
   border-width: 0px;
 }
 
+.subscription-message, 
+.subscription-message2 {
+  font-family: var(--Stem-Regular);
+  color: white;
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: center;
+}
+
 .polis-btn {
   display: block;
   width: 100%;

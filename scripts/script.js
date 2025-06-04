@@ -31,7 +31,6 @@ const scrollContainer = document.getElementById("scroll-container");
 const btnLeft = document.getElementById("scroll-left");
 const btnRight = document.getElementById("scroll-right");
 
-// Получает ширину одного блока включая отступ
 function getScrollStep() {
   const item = scrollContainer.querySelector(".item");
   const style = getComputedStyle(item);
@@ -46,3 +45,20 @@ btnLeft.addEventListener("click", () => {
 btnRight.addEventListener("click", () => {
   scrollContainer.scrollLeft += getScrollStep();
 });
+
+// Form
+
+let formOne = document.querySelector('.form-one');
+let formPolis = document.querySelector('.polis-ordering-form');
+let message = document.querySelector('.subscription-message');
+let message2 = document.querySelector('.subscription-message2');
+
+formOne.onsubmit = function(evt) {
+    evt.preventDefault();
+    message.textContent = 'Спасибо за заявку! Мы скоро свяжемся с вами!';
+};
+
+formPolis.onsubmit = function(evt) {
+    evt.preventDefault();
+    message2.textContent = 'Спасибо за заявку! Мы скоро свяжемся с вами!';
+};
